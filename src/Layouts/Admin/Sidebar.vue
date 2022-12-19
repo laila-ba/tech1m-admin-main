@@ -202,6 +202,14 @@ export default {
         route_name: "skill-test",
       },
       {
+        name: "Plan Management",
+        href: "",
+        // href: route('view.step1',{talent_id : props.user.code}),
+        current: false,
+        icon: "server",
+        route_name: "planManagement",
+      },
+      {
         name: "Form Management",
         href: "",
         // href: route('view.step1',{talent_id : props.user.code}),

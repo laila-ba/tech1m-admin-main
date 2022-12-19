@@ -11,11 +11,15 @@ import addTest from '../views/Admin/addTest.vue'
 import Categories from '../views/Admin/Categories.vue'
 import Tests from '../views/Admin/Tests.vue'
 import formManagement from '../views/Admin/formManagement.vue'
+import planDashboard from '../views/Admin/planDashboard.vue'
+import planManage from '../views/Admin/planManage.vue'
+import viewBasicPlan from '../views/Admin/viewBasicPlan.vue'
+import viewProfessionalPlan from '../views/Admin/viewProfessionalPlan.vue'
 
 
 const routes = [
   {
-    path: '/dashboard',
+    path: '/',
     name: 'dashboard',
     
     component: Dashboard
@@ -85,6 +89,31 @@ const routes = [
     name: 'formManagement',
     
     component: formManagement
+  },
+ 
+  {
+    path: '/planDashboard',
+    name: 'planDashboard',
+    
+    component: planDashboard
+  },
+  {
+    path: '/planManage',
+    name: 'planManage',
+    
+    component: planManage
+  },
+  {
+    path: '/viewBasicPlan',
+    name: 'viewBasicPlan',
+    
+    component:viewBasicPlan
+  },
+  {
+    path: '/viewProfessionalPlan',
+    name: 'viewProfessionalPlan',
+    
+    component:viewProfessionalPlan
   },
  
  
