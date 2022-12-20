@@ -173,7 +173,7 @@
                   <td
                     class="whitespace-nowrap py-4 text-base text-gray-500 text-left pl-6"
                   >
-                    <candidateJobModal></candidateJobModal>
+                    <CandidateApplicationModal></CandidateApplicationModal>
                   </td>
                   <td
                     class="whitespace-nowrap py-4 text-sm sm:text-base text-gray-500 sm:text-left pl-6 sm:pl-0"
@@ -303,12 +303,12 @@
   </div>
 </template>
 <script>
-import candidateJobModal from "./Modals/candidateJobModal.vue";
+import CandidateApplicationModal from "./Modals/candidateApplicationModal.vue";
 
 export default {
   name: "jobsApplied",
   components: {
-    candidateJobModal,
+    CandidateApplicationModal,
   },
 };
 </script>
