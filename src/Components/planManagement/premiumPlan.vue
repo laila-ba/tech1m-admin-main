@@ -54,9 +54,11 @@
             >
               <div class="py-1">
                 <MenuItem>
-                  <a href="#" class="flex px-4 py-2 text-sm text-gray-700">
-                    <span>View</span>
-                  </a>
+                  <router-link to="/viewPremiumPlan">
+                    <a class="flex px-4 py-2 text-sm text-gray-700">
+                      <span>View</span>
+                    </a>
+                  </router-link>
                 </MenuItem>
                 <MenuItem>
                   <EditPlanModal></EditPlanModal>
@@ -85,7 +87,7 @@
         <div class="flex bg-green-100 rounded-full p-1">
           <vue-feather type="check" class="w-5 text-green-600" />
         </div>
-        <p class="ml-3 text-base text-gray-700">{{ feature }}</p>
+        <p class="ml-3 text-base text-gray-700 text-left">{{ feature }}</p>
       </li>
     </ul>
   </div>

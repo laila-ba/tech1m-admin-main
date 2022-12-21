@@ -1,4 +1,4 @@
-<template>
+<template @click="fromShow = !fromShow">
   <Layout>
     <div class="border-b border-gray-100 pb-4">
       <nav class="flex" aria-label="Breadcrumb">
@@ -42,7 +42,7 @@
         Basic Plan
       </h2>
     </div>
-    <dl class="mt-5 grid grid-cols-1 gap-10 lg:grid-cols-2 py-8">
+    <dl class="mt-5 grid grid-cols-1 gap-10 lg:grid-cols-2 py-8 px-4 sm:px-0">
       <div
         v-for="item in stats"
         :key="item.name"
@@ -69,15 +69,15 @@
     </dl>
     <div class="pb-5">
       <div
-        class="-ml-4 flex flex-wrap items-center justify-between sm:flex-nowrap"
+        class="px-3 flex flex-wrap items-center justify-between sm:flex-nowrap"
       >
-        <div class="ml-4 mt-2">
+        <div class="mt-2">
           <p class="text-left font-semibold text-lg pb-1">Range</p>
           <div class="flex space-x-3">
             <div class="relative mt-1 rounded-md shadow-sm">
               <button
                 @click="fromShow = !fromShow"
-                class="block w-56 rounded-md border border-gray-300 pr-10 sm:text-sm p-2 text-left text-gray-500 bg-white"
+                class="block sm:w-56 w-44 rounded-md border border-gray-300 pr-10 sm:text-sm p-2 text-left text-gray-500 bg-white"
               >
                 From
               </button>
@@ -92,18 +92,12 @@
             </div>
             <div v-show="fromShow" class="absolute z-10 mx-auto">
               <flatpickr :config="config"> </flatpickr>
-              <button
-                @click="fromShow = !fromShow"
-                class="rounded-md w-full bg-blue-600 font-bold text-base p-4 text-white font tracking-wider"
-              >
-                Continue
-              </button>
             </div>
 
             <div class="relative mt-1 rounded-md shadow-sm">
               <button
                 @click="toShow = !toShow"
-                class="block w-56 rounded-md border border-gray-300 pr-10 sm:text-sm p-2 text-left text-gray-500 bg-white"
+                class="block sm:w-56 w-44 rounded-md border border-gray-300 pr-10 sm:text-sm p-2 text-left text-gray-500 bg-white"
               >
                 To
               </button>
@@ -127,7 +121,7 @@
             </div>
           </div>
         </div>
-        <div class="ml-4 mt-12 flex-shrink-0">
+        <div class="sm:ml-4 mt-12 flex-shrink-0">
           <div class="mx-auto text-gray-600">
             <button type="submit" class="absolute ml-3 mt-3">
               <svg
@@ -150,7 +144,7 @@
               </svg>
             </button>
             <input
-              class="border border-gray-300 bg-white h-10 w-96 rounded-lg py-5 pl-10 text-base focus:outline-none"
+              class="border border-gray-300 bg-white h-10 w-72 sm:w-96 rounded-lg py-5 pl-10 text-base focus:outline-none"
               type="search"
               name="search"
               placeholder="Search Candidates, Tags"
@@ -288,10 +282,10 @@
               class="flex items-center justify-between border-t border-gray-200 bg-white px-4 py-3 sm:px-6"
               aria-label="Pagination"
             >
-              <div class="hidden sm:block">
+              <div class="block px-4">
                 <p class="text-base text-gray-700">Page 1 of 15</p>
               </div>
-              <div class="flex flex-1 justify-between sm:justify-end">
+              <div class="flex flex-1 justify-end">
                 <a
                   href="#"
                   class="relative inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50"

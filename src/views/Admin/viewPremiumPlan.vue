@@ -32,14 +32,14 @@
               </svg>
               <a
                 class="ml-4 text-sm font-medium text-gray-400 hover:text-gray-500"
-                >Professional Plan</a
+                >Premium Plan</a
               >
             </div>
           </li>
         </ol>
       </nav>
       <h2 class="text-left ml-4 pt-5 text-3xl sm:text-4xl font-bold text-black">
-        Professional Plan
+        Premium Plan
       </h2>
       <div class="border-b border-gray-200 text-left ml-4 mt-5">
         <div class="mt-3 sm:mt-4">
@@ -381,7 +381,7 @@
               class="flex items-center justify-between border-t border-gray-200 bg-white px-4 py-3 sm:px-6"
               aria-label="Pagination"
             >
-              <div class="px-4 block">
+              <div class="block px-4">
                 <p class="text-base text-gray-700">Page 1 of 15</p>
               </div>
               <div class="flex flex-1 justify-end">

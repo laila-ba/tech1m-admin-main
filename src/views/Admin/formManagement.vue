@@ -7,7 +7,7 @@
         </h1>
       </div>
     </div>
-    <div class="text-right">
+    <div class="text-right pr-4 sm:pr-0">
       <div v-if="tab === 1"><addCompanyRole></addCompanyRole></div>
       <div v-if="tab === 2"><addCompanySize></addCompanySize></div>
       <div v-if="tab === 3"><addValue></addValue></div>
@@ -19,7 +19,7 @@
       <div v-if="tab === 9"><addTechnologies></addTechnologies></div>
       <div v-if="tab === 10"><addTechnologies></addTechnologies></div>
     </div>
-    <div class="relative z-0 flex flex-1 overflow-hidden">
+    <div class="relative z-0 sm:flex sm:flex-1 overflow-hidden">
       <main
         class="relative z-0 flex-1 overflow-y-auto focus:outline-none xl:order-last"
       >
@@ -61,11 +61,11 @@
         <!-- End main area -->
       </main>
       <aside
-        class="relative hidden w-96 flex-shrink-0 overflow-y-auto border-r border-gray-200 xl:order-first xl:flex xl:flex-col"
+        class="relative w-96 flex-shrink-0 overflow-y-auto border-r border-gray-200 xl:order-first xl:flex xl:flex-col"
       >
         <!-- Start secondary column (hidden on smaller screens) -->
         <div class="inset-0 py-6 px-4 sm:px-6 lg:px-8">
-          <div class="h-screen rounded shadow bg-white">
+          <div class="sm:h-screen rounded shadow bg-white">
             <ul role="list" class="px-3 py-6 space-y-3 text-left">
               <li
                 v-for="category in categories"

@@ -2,7 +2,7 @@
   <Layout>
     <div class="sm:flex pl-3 items-center justify-between pb-6 sm:border-b">
       <div>
-        <h1 class="text-left text-4xl font-bold py-3 sm:pl-0">
+        <h1 class="text-left text-3xl sm:text-4xl font-bold py-3 sm:pl-0">
           Manage Subscription
         </h1>
         <p class="text-left text-gray-500">

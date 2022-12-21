@@ -40,7 +40,7 @@
                       <div class="ml-3 flex h-7 items-center">
                         <button
                           type="button"
-                          class="rounded-md bg-white text-gray-600 hover:bg-gray-100 px-2 py-1.5"
+                          class="rounded-md bg-white text-gray-600 hover:bg-gray-100 px-2 py-1.5 mb-3"
                           @click="open = false"
                         >
                           <span class="sr-only">Close panel</span>
@@ -54,7 +54,7 @@
                       <div>
                         <div>
                           <img
-                            class="w-full object-cover lg:h-28 rounded-md"
+                            class="w-full object-cover h-24 lg:h-28 rounded-md"
                             src="https://media.istockphoto.com/id/1384809466/vector/unicorn-rainbow-background-vector-illustration.jpg?s=612x612&w=0&k=20&c=VpGyPcSOH1yp_Yk_l2jp903Pt-LtYpdjUWrmsL2HLdY="
                             alt=""
                           />

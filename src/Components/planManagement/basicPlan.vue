@@ -87,7 +87,7 @@
         <div class="flex bg-green-100 rounded-full p-1">
           <vue-feather type="check" class="w-5 text-green-600" />
         </div>
-        <p class="ml-3 text-base text-gray-700">{{ feature }}</p>
+        <p class="ml-3 text-base text-gray-700 text-left">{{ feature }}</p>
       </li>
     </ul>
   </div>

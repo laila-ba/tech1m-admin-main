@@ -51,7 +51,9 @@
             >
               <!--modal contents-->
 
-              <h3 class="font-bold text-2xl">Add Company User Role</h3>
+              <h3 class="font-bold text-xl sm:text-2xl">
+                Add Company User Role
+              </h3>
               <div class="pt-4">
                 <div class="mt-1">
                   <input
@@ -66,14 +68,14 @@
                 <button
                   @click="open = false"
                   type="button"
-                  class="inline-flex w-full justify-center rounded border border-transparent bg-blue-600 px-4 py-2 text-base font-medium text-white shadow-sm col-start-2"
+                  class="inline-flex w-full justify-center rounded border border-transparent bg-blue-600 px-4 py-2 text-sm sm:text-base font-medium text-white shadow-sm col-start-2"
                 >
                   Add
                 </button>
                 <button
                   @click="open = false"
                   type="button"
-                  class="inline-flex w-full justify-center rounded border border-gray-400 bg-white px-4 py-2 text-base font-medium text-gray-700 shadow-sm col-start-1 mt-0"
+                  class="inline-flex w-full justify-center rounded border border-gray-400 bg-white px-4 py-2 text-sm sm:text-base font-medium text-gray-700 shadow-sm col-start-1 mt-0"
                 >
                   Cancel
                 </button>

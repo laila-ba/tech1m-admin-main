@@ -15,6 +15,9 @@ import planDashboard from '../views/Admin/planDashboard.vue'
 import planManage from '../views/Admin/planManage.vue'
 import viewBasicPlan from '../views/Admin/viewBasicPlan.vue'
 import viewProfessionalPlan from '../views/Admin/viewProfessionalPlan.vue'
+import viewPremiumPlan from '../views/Admin/viewPremiumPlan.vue'
+
+
 
 
 const routes = [
@@ -114,6 +117,12 @@ const routes = [
     name: 'viewProfessionalPlan',
     
     component:viewProfessionalPlan
+  },
+  {
+    path: '/viewPremiumPlan',
+    name: 'viewPremiumPlan',
+    
+    component:viewPremiumPlan
   },
  
  
